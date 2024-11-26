@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  --scrollbarBG: #09090b;
+  --thumbBG: #1e1e1e;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+/* body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+} */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.custom-quill .ql-container {
+  background-color: #09090B;
+  height: 320px; /* Default for small screens */
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: 1px solid #2a2a2a !important;
+  border-top: 0 !important;
+  outline: none !important;
+  color: white;
+  font-size: 16px;
+}
+
+@media (min-width: 640px) { /* Tailwind 'sm' breakpoint */
+  .custom-quill .ql-container {
+    height: 440px; /* Height for screens larger than 'sm' */
+  }
+}
+
+.custom-quill .ql-editor {
+  border: none !important;
+  outline: none !important;
+  padding: 4;
+  font-size: 18px;
+  font-family: 'Geist';
+  color: #cccccc;
+  font-weight: 100;
+}
+
+.custom-quill .ql-toolbar {
+  background-color: #09090B;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border: 1px solid #2a2a2a !important;
+  outline: none !important;
+}
+
+.clip-background {
+  clip-path: inset(0 0 0 0);
+  z-index: 0;
+}
+
+.spinner-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(.5, .5, .5, 360deg);
+  }
+  to {
+    transform: rotate3d(0deg);
+  }
+}
+
+
+/* ALTERNATING ORBITS */
+.leo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.blue-orbit {
+  width: 165px;
+  height: 165px;
+  border: 2px solid #91daffa5;
+  animation: spin3D 3s linear .2s infinite;
+}
+
+.green-orbit {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #91ffbfa5;
+  animation: spin3D 2s linear 0s infinite;
+}
+
+.red-orbit {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #ffca91a5;
+  animation: spin3D 1s linear 0s infinite;
+}
+
+.white-orbit {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  animation: spin3D 10s linear 0s infinite;
+}
+
+.w1 {
+  transform: rotate3D(1, 1, 1, 90deg);
+}
+
+.w2 {
+  transform: rotate3D(1, 2, .5, 90deg);
+}
+
+.w3 {
+  transform: rotate3D(.5, 1, 2, 90deg);
+}
