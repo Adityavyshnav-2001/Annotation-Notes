@@ -1,7 +1,7 @@
 Live: [https://annotations-flame.vercel.app/](https://annotations-flame.vercel.app/login)
 <br></br>
 ![350686019-a2e9d5eb-3231-4e8c-aaa7-b9f247f56de9 (1)](https://github.com/user-attachments/assets/673b3732-b011-4520-8eff-91f7135aa64b)
-)<br><br/>
+<br><br/>
 ![image](https://github.com/user-attachments/assets/880c87ba-c649-4f5e-bde1-1f5e6decd400)<br><br/>
 ![image](https://github.com/user-attachments/assets/0ea828af-1515-48b1-accd-976f8a72a316)<br><br/>
 ![image](https://github.com/user-attachments/assets/0f85af79-6a23-4d16-8525-48d338864879)<br><br/>
